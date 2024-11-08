@@ -16,7 +16,7 @@ function ajoutDeTache(event) {
     div.innerHTML = 
     `   <div id="divPush">
                 <input type="checkbox" id="scales" name="scales" />
-                ${ajout.value}
+                ${ajout.value}${ID++}
                 <label>tache</label>
                 <button>Supprimer</button>
             </div>`;
@@ -29,22 +29,20 @@ function supprimerTache(event) {
     console.log(event);
     
     if (event.target.tagName === "BUTTON") {      
-        event.target.parentNode.remove(); }
+        event.target.parentNode.remove();
+    }
     
 }
 function recupereChek(event){
+    console.log("check", event.target);
     
     if(scales === checked){      
-    localStorage.setItem("maCle",divPush,
-    JSON.stringify("divP"));
-    divP.remove(divPush);
-    JSON.parse(localStorage.getItem(divP))
-
-
-    localStorage.getItem("maCle");
-    console.log(localStorage);
-    }
-
-}
+    //localStorage.setItem("maCle",divP)
     
-meslistes.addEventListener("click", supprimerTache);
+    }
+}
+function transfereDiv(event){
+    JSON.parse(localStorage.getItem(divP));
+    localStorage.getItem("maCle");
+}
+divP.addEventListener("click", supprimerTache);
