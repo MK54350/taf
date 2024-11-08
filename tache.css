@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(59, 15, 15);
+    color: wheat;
+    
+}
+button{
+    border-top: 50px;
+    
+    margin-top: 50px;
+    color: black;
+}
+table th{
+    border: 2px solid wheat; 
+    color: white;
+}

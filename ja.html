@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+
+    let majoration = 0;
+    let celibataire = "";
+    let enfant = "";
+    let salaire = "";
+    do {
+        celibataire = prompt("êtes vous célibataire taper oui ou non en minuscule");
+        console.log(celibataire);
+        if (celibataire !== "oui" && celibataire !== "non") {
+            alert("veuillez saisir des donnés correcte")
+        }
+    }
+    while (celibataire !== "oui" && celibataire !== "non");
+
+    do {
+        enfant = prompt("taper le nombres d'enfants à charges, si il n y en a pas taper 0");
+        console.log(typeof enfant);
+        if (isNaN(enfant)) {
+            alert("veuillez saisir des donnés correcte")
+        }
+    } while (isNaN(enfant) );
+
+    do {
+        salaire = prompt ("taper votre salaire sans virgule en chiffres")
+        
+    console.log(salaire)
+    if(isNaN(salaire)){
+        alert("veuillez saisir des donnés correcte")
+    }}
+    
+    while
+    (isNaN(salaire))
+    
+    if (celibataire === "non") {
+        majoration = majoration + 25;
+    } else {
+        majoration = + 20
+    }
+    if (enfant != 0) {
+        majoration = majoration + (enfant * 15)
+    }
+    if (salaire < 1800) {
+        majoration = majoration + 10
+    }
+    if (majoration >= 50) {
+        majoration = 50
+    }
+    console.log(majoration)
+    alert(majoration)
+
+</script>
+
+</html>
