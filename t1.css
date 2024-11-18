@@ -1,0 +1,22 @@
+body{
+    
+    margin: auto;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+h1{
+    border: 2px black solid; background-color: chocolate;
+    width: 70%;
+    margin: auto;
+}
+div{
+    border: 2px black solid;
+    background-color:darkgrey;
+    
+    margin: auto;
+}
+h2{
+    border: 2px black solid; 
+    background-color: chocolate;  
+    margin: auto;
+}
